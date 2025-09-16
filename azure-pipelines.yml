@@ -29,6 +29,13 @@ stages:
     - script: |
         echo "Running unit tests..."
       displayName: 'Run unit testes'
+    - task: Bash@3
+      inputs:
+       targetType: 'inline'
+       script: |
+            # Write your commands here
+            
+            echo 'Hello world'
 
 - stage: DeployToStaging
   displayName: 'Deploy to Staging'
